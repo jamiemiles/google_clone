@@ -1,0 +1,1 @@
+This project is a basic replication of the Google search engine's landing page.
