@@ -126,6 +126,14 @@ a:hover {
   font-size: 20px;
   margin-left: 15px;
 }
+#mic {
+  grid-area: search-bar;
+  justify-self: end;
+  align-self: center;
+  margin-right: 15px;
+  font-size: 20px;
+  color: rgb(172, 172, 172);
+}
 #text-box:focus {
   outline: none;
 }
