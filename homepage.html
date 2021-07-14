@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -12,46 +13,52 @@
 
   <body>
     <header>
-      <nav>
-        <ul>
-          <li>About</li>
-          <li>Store</li>
-          <li>Gmail</li>
-          <li>Images</li>
-          <button type="submit">Sign In</button>
-        </ul>
-      </nav>
+      <div class="nav-container">
+        <a href="#" id="about">About</a>
+        <a href="#" id="store">Store</a>
+        <a href="#" id="gmail">Gmail</a>
+        <a href="#" id="images">Images</a>
+        <a href="#" id="menu-btn"
+          ><img src="static/images/widget.png" height="25px" width="25px"
+        /></a>
+        <a href="#" id="sign-in-btn">Sign in</a>
+      </div>
     </header>
-    <div class="logo">
-      <img
-        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-        alt="logo"
-      />
-    </div>
-    <div class="search-bar">
+    <main>
+      <div class="main-container">
+        <a href="#" id="logo"
+          ><img
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            height="92px"
+            width="272px"
+            alt="google-logo"
+        /></a>
+        <input type="text" id="search-bar" />
+        <div id="flexbox">
+          <button type="submit" id="search-btn">Google Search</button>
+          <button type="submit" id="lucky-btn">I'm Feeling Lucky</button>
+        </div>
+
+        <p id="google-text">Google offered in: <a href="#">English</a></p>
+      </div>
+    </main>
+    <!-- <div class="search-bar">
       <input type="text" />
       <section class="icons">
         <i class="material-icons magnifier">search</i>
         <i class="material-icons mic">mic</i>
       </section>
-    </div>
-    <div class="buttons">
-      <button type="submit">Google Search</button>
-      <button type="submit">I'm Feeling Lucky</button>
-    </div>
-    <footer class="footer">
-      <ul class="footer-links left-info">
-        <li><a href="#">Advertising</a></li>
-        <li><a href="#">Business</a></li>
-        <li><a href="#">How Search works</a></li>
-      </ul>
+    </div> -->
+    <footer class="footer-container">
+      <p id="country">United Kingdom</p>
+      <a href="#" id="advertising">Advertising</a>
+      <a href="#" id="business">Business</a>
+      <a href="#" id="how-search-works">How Search works</a>
 
-      <a href="#">Carbon neutral since 2007</a>
-      <ul class="footer-links right-info">
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Settings</a></li>
-      </ul>
+      <a href="#" id="carbon-neutral">Carbon neutral since 2007</a>
+      <a href="#" id="privacy">Privacy</a>
+      <a href="#" id="terms">Terms</a>
+      <a href="#" id="settings">Settings</a>
     </footer>
   </body>
 </html>
